@@ -16,6 +16,12 @@
 ### Transitive Dependencies
 One package is dependent on other package and other package is dependent on other package.
 
+### Explination about (Tilde ~ | Caret ^ | Asterisk *) in package.json
+
+- Tilde is used to accept patches & bugs
+- Caret allows us to receive patches,bug fixes, & minor version changes
+- Asterisk is used to allow any updates, either major or minor (Generally not recommended)
+
 ### Parcel (We have many bundlers like webpack, vite, parcel)
 There are two type of build. Development Build & Production Build, There are lot of benefits of bundler here is the list below
 
