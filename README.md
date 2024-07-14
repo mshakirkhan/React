@@ -25,3 +25,12 @@ A6: Component is building block of React & It is just a JS function which return
 - Functional Components
 
 - First letter should be capital when we create a component.
+
+### Q7: What is Props?
+A7: Props is property, It is just like passing arguments to function. 
+
+### Q8: What is Config Driven UI?
+A8: Config Driven Ui allow you to create dynamic and customizable UIs that can be easily modified without requiring changes to underlying code.
+
+### Q9: What is Optional Chaning?
+A9: Optional chaining, introduced in ECMAScript 2020, is a feature that simplifies the process of accessing properties and methods of nested objects or arrays when intermediate properties may be null or undefined 
