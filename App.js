@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-const heading = React.createElement("h1", {
-    id:"mainHeading",
-    name:"Shakir"
-}, "Hello React");
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const Heading = () => (
+    <h1>Hello This is first functional component</h1>
+)
 
-root.render(heading);
+const HeadingTwo = () => <h1>Hello This is second functional component</h1>
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<HeadingTwo />);

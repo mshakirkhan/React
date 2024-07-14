@@ -4,6 +4,7 @@
   "description": "## 01- Inception",
   "main": "App.js",
   "scripts": {
+    "start": "parcel index.html",
     "test": "jest"
   },
   "repository": {
