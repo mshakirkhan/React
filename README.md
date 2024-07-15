@@ -37,3 +37,8 @@ A9: Optional chaining, introduced in ECMAScript 2020, is a feature that simplifi
 
 ### Q10: What is React Hooks?
 A10: 
+
+### Q11: How many types of export/import?
+A11: There are 2 types of exports.
+- Default Export
+- Named Export
