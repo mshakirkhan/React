@@ -34,3 +34,6 @@ A8: Config Driven Ui allow you to create dynamic and customizable UIs that can b
 
 ### Q9: What is Optional Chaning?
 A9: Optional chaining, introduced in ECMAScript 2020, is a feature that simplifies the process of accessing properties and methods of nested objects or arrays when intermediate properties may be null or undefined 
+
+### Q10: What is React Hooks?
+A10: 
