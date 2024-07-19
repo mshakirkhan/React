@@ -1,5 +1,4 @@
 const Cart = (props) => {
-    console.log("SAHKRI",props);
     const {id, title, thumbnail, price, description, rating} = props.cartDetails;
     return (
         <div className="product-card">
