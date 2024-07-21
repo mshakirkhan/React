@@ -42,3 +42,24 @@ A10:
 A11: There are 2 types of exports.
 - Default Export
 - Named Export
+
+### Q12: What is State in React?
+A12: 
+
+### Q13: React Hooks
+1- useState
+2- useEffect
+3- useContext
+4- useReducer
+5- useCallback
+6- useMemo
+7- useRef
+8- useImperativeHandle
+9- useLayoutEffect
+10- useDebugValue
+11- Custom Hooks
+
+### Q14: Why React is Fast?
+- It has virtual DOM
+- It has Fiber algorithm
+- It has efficient DOM manupulation
