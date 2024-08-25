@@ -63,3 +63,6 @@ A12:
 - It has virtual DOM
 - It has Fiber algorithm
 - It has efficient DOM manupulation
+
+### Q15: When useEffect() is called?
+A15: useEffect is called after rendering the component, One important is thing is dependence array is that and we don't pass second arguments so it calls on every component render.
