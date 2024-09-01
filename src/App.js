@@ -1,12 +1,15 @@
-import React from 'react';
+import React, {lazy, Suspense} from 'react';
 import ReactDOM from 'react-dom/client';
 import Header from './components/Header';
 // import Body from './components/Body';
 import CartBody from './components/CartBody';
-import About from './About';
+// import About from './About';
 import Contact from './Contact';
 import Error from './Error';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
+
+// Lazy Loading
+const About = lazy(() => import("./About"))
 
 const AppLayout = () => {
    return (
@@ -28,7 +31,7 @@ const appRoutes = createBrowserRouter([
          },
          {
             path:'/about',
-            element: <About/>
+            element: <Suspense fallback={<h1>Loading.....</h1>}><About/></Suspense>
          },
          {
             path:'/contact',
