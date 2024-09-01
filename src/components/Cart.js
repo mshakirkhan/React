@@ -13,4 +13,13 @@ const Cart = (props) => {
     )
 }
 
+export const topRatedCart = (Cart) => {
+    return (props) => (
+        <>
+            <label>Top Rated</label>
+            <Cart {...props} />
+        </>
+    )
+}
+
 export default Cart;

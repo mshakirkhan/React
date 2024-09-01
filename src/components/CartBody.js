@@ -1,4 +1,4 @@
-import Cart from "./Cart";
+import Cart, {topRatedCart} from "./Cart";
 import { useState, useEffect } from "react";
 import mockData from "../utils/mockData";
 import useFetchProductData from "../utils/useFetchProductData";
@@ -7,9 +7,12 @@ console.log(useOnlineStatus);
 
 const CartBody = () => {
     const apiData = useFetchProductData();
+    console.log(apiData);
     const isOnline = useOnlineStatus();
+    const TopRatedCart = topRatedCart(Cart);
 
     const [data, setData] = useState(apiData);
+
     useEffect(() => {
         setData(apiData);
       }, [apiData]);
@@ -26,9 +29,9 @@ const CartBody = () => {
             <div className="topRatedContainer"><button className="topRatedButton" onClick={topRatedHandler}>Top Rated Products</button></div>
             <div className='cardContainer'>
                 {
-                    data.map((cartData) => {
-                        return <Cart key={cartData.id} cartDetails={cartData} />
-                    })
+                    data.map((cartData) => (
+                        cartData.rating > 4 ? <TopRatedCart key={cartData.id} cartDetails={cartData} /> : <Cart key={cartData.id} cartDetails={cartData} /> 
+                    ))
                 }
             </div>
         </>

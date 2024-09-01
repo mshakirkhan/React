@@ -91,3 +91,11 @@
     border-radius: 3px;
     cursor: pointer;
 }
+
+.top-rated {
+    background: rgba(0, 0, 255, 0.441);
+    padding: 5px;
+    color: #f5f5f5;
+    border-radius: 5px;
+    position: absolute;
+}
