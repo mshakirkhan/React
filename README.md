@@ -1,10 +1,10 @@
 # Topic
 
-### 01: Higher Order Functions
+### 01: Redux Tool Kit (RTK)
 
 # Features
 
-### 01: Single Responsibility Principle
+### 
 
 ## Authors
 

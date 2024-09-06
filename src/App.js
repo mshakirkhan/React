@@ -7,16 +7,21 @@ import CartBody from './components/CartBody';
 import Contact from './Contact';
 import Error from './Error';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import appStore from './utils/appStore';
+import ViewCart from './ViewCart';
 
 // Lazy Loading
 const About = lazy(() => import("./About"))
 
 const AppLayout = () => {
    return (
-      <div className='container'>
-         <Header/>
-         <Outlet/>
-      </div>
+      <Provider store={appStore}>
+         <div className='container'>
+            <Header/>
+            <Outlet/>
+         </div>
+      </Provider>
    )
 }
 
@@ -36,6 +41,10 @@ const appRoutes = createBrowserRouter([
          {
             path:'/contact',
             element: <Contact/>
+         },
+         {
+            path:'/view-cart',
+            element: <ViewCart/>
          }
       ],
       errorElement: <Error />
